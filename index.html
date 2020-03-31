@@ -1,224 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
+  <title>
+    Pcrab 
+  </title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   
-  <title>非鱼</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="非鱼">
-<meta property="og:url" content="https://github.com/ldy790028773/tfish-oh.github.io/index.html">
-<meta property="og:site_name" content="非鱼">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="非鱼">
-<meta name="twitter:card" content="summary">
+  <link rel="shortcut icon" href="/favicon.ico" />
   
-    <link rel="alternate" href="/atom.xml" title="非鱼" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
+
   
 <link rel="stylesheet" href="/css/style.css">
 
+  <link href="https://google-fonts.mirrors.sjtug.sjtu.edu.cn/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+
+  
+  
+
+  
+<link rel="stylesheet" href="/css/iDisqus.min.css">
+
+  
+<script src="/js/iDisqus.min.js"></script>
+
+
+  <script>
+  var disq = new iDisqus('comment', {
+      forum: 'pcrab-blog',
+      api: 'https://disqus.pcrab.ml',
+      site: 'https://pcrab.ml',
+      mode: 1,
+      timeout: 3000,
+      init: true
+  });
+  </script>
+  
+  
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">非鱼</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/ldy790028773/tfish-oh.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-vuerouter" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/31/vuerouter/" class="article-date">
-  <time datetime="2020-03-31T08:51:43.685Z" itemprop="datePublished">2020-03-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/31/vuerouter/">vuerouter</a>
-    </h1>
-  
+  <div class="title">
+  <img class="title_img" src="https://github.com/tfish-oh/tfish-oh.github.io.git/images/icon.jpg"/><br>
+  <p id="site_title">&nbsp非鱼的鱼塘&nbsp</p>
+</div>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>####vue-router</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">let</span> Vue;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">VueRouter</span></span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(options)&#123;</span><br><span class="line">       <span class="keyword">this</span>.$options=options</span><br><span class="line">        <span class="keyword">this</span>.routerMap=&#123;&#125;</span><br><span class="line">        <span class="keyword">this</span>.app=<span class="keyword">new</span> Vue(&#123;</span><br><span class="line">            data() &#123;</span><br><span class="line">                <span class="keyword">return</span> &#123;</span><br><span class="line">                    current: <span class="string">'/'</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    init()&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'routeroptions'</span>,<span class="keyword">this</span>.$options)</span><br><span class="line">        <span class="keyword">this</span>.bindEvents();</span><br><span class="line">        <span class="keyword">this</span>.createRouteMap()</span><br><span class="line">        <span class="keyword">this</span>.initComponent()</span><br><span class="line">    &#125;</span><br><span class="line">    bindEvents()&#123;</span><br><span class="line">        <span class="built_in">window</span>.addEventListener(<span class="string">'hashchange'</span>,<span class="keyword">this</span>.onHashChange.bind(<span class="keyword">this</span>))</span><br><span class="line">        <span class="built_in">window</span>.addEventListener(<span class="string">'load'</span>,<span class="keyword">this</span>.onHashChange.bind(<span class="keyword">this</span>))</span><br><span class="line">    &#125;</span><br><span class="line">    onHashChange()&#123;</span><br><span class="line">        <span class="keyword">this</span>.app.current=<span class="built_in">window</span>.location.hash.slice(<span class="number">1</span>)||<span class="string">'/'</span></span><br><span class="line">    &#125;</span><br><span class="line">    createRouteMap()&#123;</span><br><span class="line">        <span class="keyword">this</span>.$options.routes.forEach(<span class="function"><span class="params">item</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.routerMap[item.path]=item.component;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    initComponent()&#123;</span><br><span class="line">        Vue.component(<span class="string">'router-link'</span>,&#123;</span><br><span class="line">            props:&#123;</span><br><span class="line">                to:&#123;</span><br><span class="line">                    type:<span class="built_in">String</span>,</span><br><span class="line">                    required:<span class="literal">true</span></span><br><span class="line">                &#125;</span><br><span class="line">                </span><br><span class="line">            &#125;,</span><br><span class="line">            render(h) &#123;</span><br><span class="line">              <span class="keyword">return</span> h(<span class="string">'a'</span>,&#123;<span class="attr">attrs</span>:&#123;<span class="attr">href</span>:<span class="keyword">this</span>.to&#125;&#125;,[<span class="keyword">this</span>.$slots.default])  </span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line">        Vue.component(<span class="string">'router-view'</span>,&#123;</span><br><span class="line">            render:<span class="function"><span class="params">h</span>=&gt;</span>&#123;</span><br><span class="line">                <span class="keyword">const</span> component = <span class="keyword">this</span>.routerMap[<span class="keyword">this</span>.app.current]</span><br><span class="line">                <span class="keyword">return</span> h(component)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">VueRouter.install=<span class="function"><span class="keyword">function</span> (<span class="params">_Vue</span>)</span>&#123;</span><br><span class="line">Vue=_Vue</span><br><span class="line">Vue.mixin(&#123;</span><br><span class="line">    beforeCreate() &#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>.$options.router)&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">'vueoptions'</span>,<span class="keyword">this</span>.$options)</span><br><span class="line">            Vue.prototype.$router=<span class="keyword">this</span>.$options.router</span><br><span class="line">            <span class="keyword">this</span>.$options.router.init()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/ldy790028773/tfish-oh.github.io/2020/03/31/vuerouter/" data-id="ck8fp5cu10000tk691ft9bnfi" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+  <div class="navi">
+    <a id="navi_item" href="/#" class="menu-item-link">Home</a>
+    <a id="navi_item" href="/tags" class="menu-item-link">tags</a>
+    <a id="navi_item" href="/about" class="menu-item-link">about</a>
+    <a id="navi_item" href="/search" class="menu-item-link">search</a>
+</div>
+
+<hr/>
 
 
+  <div class="main">
+    <div class="list">
   
-    <article id="post-index" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/31/index/" class="article-date">
-  <time datetime="2020-03-31T08:51:43.683Z" itemprop="datePublished">2020-03-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/31/index/">promise简版实现</a>
-    </h1>
-  
+<div class=index_list>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br></pre></td><td class="code"><pre><span class="line">   <span class="keyword">const</span> PENDING = <span class="string">'PENDING'</span></span><br><span class="line">    <span class="keyword">const</span> FULFILLED = <span class="string">'FULFILLED'</span></span><br><span class="line">    <span class="keyword">const</span> REJECTED = <span class="string">'REJECTED'</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Promise</span></span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(callback)&#123;</span><br><span class="line">        <span class="keyword">this</span>._status = PENDING</span><br><span class="line">        <span class="keyword">this</span>.next=<span class="literal">null</span></span><br><span class="line">        <span class="comment">// 添加状态</span></span><br><span class="line">        <span class="keyword">this</span>._value = <span class="literal">undefined</span></span><br><span class="line">        <span class="comment">// 添加成功回调函数队列</span></span><br><span class="line">        <span class="comment">// this._fulfilledQueues = []</span></span><br><span class="line">        <span class="comment">// 添加失败回调函数队列</span></span><br><span class="line">        <span class="comment">// this._rejectedQueues = []</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            callback(<span class="keyword">this</span>.resolve.bind(<span class="keyword">this</span>),<span class="keyword">this</span>.reject.bind(<span class="keyword">this</span>))</span><br><span class="line">        &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    onFulfilled(val)&#123;</span><br><span class="line">        <span class="keyword">this</span>.next.resolve(val)</span><br><span class="line">    &#125;</span><br><span class="line">    onRejected(err)&#123;</span><br><span class="line">        <span class="keyword">this</span>.next.reject(err)</span><br><span class="line">    &#125;</span><br><span class="line">    then(onFulfilled, onRejected)&#123;</span><br><span class="line">        <span class="keyword">this</span>.next = <span class="keyword">new</span> <span class="built_in">Promise</span>();</span><br><span class="line">        onFulfilled?<span class="keyword">this</span>.onFulfilled = onFulfilled:<span class="string">''</span>;</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>._status==FULFILLED)&#123;</span><br><span class="line">            <span class="keyword">this</span>.runTask(<span class="keyword">this</span>._value,<span class="keyword">this</span>.onFulfilled.bind(<span class="keyword">this</span>),<span class="keyword">this</span>.next)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.next</span><br><span class="line">    &#125;</span><br><span class="line">   <span class="keyword">catch</span>(onFulfilled, onRejected)&#123;</span><br><span class="line">        <span class="keyword">this</span>.next = <span class="keyword">new</span> <span class="built_in">Promise</span>();</span><br><span class="line">        onRejected?<span class="keyword">this</span>.onRejected = onRejected:<span class="string">''</span>;</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>._status==REJECTED)&#123;</span><br><span class="line">            <span class="keyword">this</span>.runTask(<span class="keyword">this</span>._value,<span class="keyword">this</span>.onRejected,<span class="keyword">this</span>.next)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.next</span><br><span class="line">    &#125;</span><br><span class="line">    resolve(val)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(val,<span class="keyword">this</span>)</span><br><span class="line">        <span class="keyword">this</span>._value=val</span><br><span class="line">        <span class="keyword">this</span>._status = FULFILLED</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>.onFulfilled&amp;&amp;<span class="keyword">this</span>.next)&#123;</span><br><span class="line">            <span class="keyword">this</span>.runTask(<span class="keyword">this</span>._value,<span class="keyword">this</span>.onFulfilled.bind(<span class="keyword">this</span>),<span class="keyword">this</span>.next)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    reject(err)&#123;</span><br><span class="line">        <span class="keyword">this</span>._value=err</span><br><span class="line">        <span class="keyword">this</span>._status = REJECTED</span><br><span class="line">      	<span class="keyword">if</span>(<span class="keyword">this</span>.next&amp;&amp;<span class="keyword">this</span>.onRejected)&#123;</span><br><span class="line">         	<span class="keyword">this</span>.runTask(<span class="keyword">this</span>._value,<span class="keyword">this</span>.onRejected.bind(<span class="keyword">this</span>),<span class="keyword">this</span>.next)</span><br><span class="line">        &#125;</span><br><span class="line">      </span><br><span class="line">    &#125;</span><br><span class="line">    runTask(val,processor,next)&#123;</span><br><span class="line">        <span class="keyword">let</span> result=<span class="literal">null</span></span><br><span class="line">        <span class="keyword">let</span> normal=<span class="number">1</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            result = processor(val)</span><br><span class="line">            <span class="built_in">console</span>.log(result,<span class="number">1</span>)</span><br><span class="line">        &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">            normal = <span class="number">0</span>;</span><br><span class="line">            result = error;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(result <span class="keyword">instanceof</span> <span class="built_in">Promise</span>)&#123;</span><br><span class="line">            result.next=next</span><br><span class="line">            result.then(<span class="function">(<span class="params">res</span>)=&gt;</span>&#123;</span><br><span class="line">                <span class="comment">// next获取res变量</span></span><br><span class="line">                next.resolve(res)</span><br><span class="line">            &#125;)</span><br><span class="line">            result.catch(<span class="function">(<span class="params">err</span>)=&gt;</span>&#123;</span><br><span class="line">                next.reject(err)</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(normal==<span class="number">1</span>)&#123;</span><br><span class="line">            next.resolve(result)</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            next.reject(result)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">static</span> resolve(val)&#123;</span><br><span class="line">        <span class="keyword">if</span>(val <span class="keyword">instanceof</span> <span class="built_in">Promise</span>) <span class="keyword">return</span> val</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>)=&gt;</span>resolve(val))</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">static</span> reject(val)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>)=&gt;</span>reject(val))</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">static</span> all(list)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(resolve,reject=&gt;&#123;</span><br><span class="line">            <span class="keyword">let</span> values=[]</span><br><span class="line">            <span class="keyword">let</span> count=<span class="number">0</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">let</span> [i,p] <span class="keyword">of</span> list.entries())&#123;</span><br><span class="line">                <span class="comment">// Promise上面的静态方法</span></span><br><span class="line">                <span class="keyword">this</span>.resolve(p).then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">                    values[i]=res</span><br><span class="line">                    count++</span><br><span class="line">                    <span class="keyword">if</span>(count==list.length) resolve(values)</span><br><span class="line">                &#125;,err=&gt;&#123;</span><br><span class="line">                    reject(err)</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">static</span> race(list)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>)=&gt;</span>&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">let</span> p <span class="keyword">of</span> list)&#123;</span><br><span class="line">                <span class="keyword">this</span>.resolve(item).then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">                   resolve(res)                </span><br><span class="line">                &#125;,err=&gt;&#123;</span><br><span class="line">                    reject(err)</span><br><span class="line">                &#125;)   </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">finally</span>(cb)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.then(</span><br><span class="line">            val=&gt;<span class="built_in">Promise</span>.resolve(cb()).then(<span class="function"><span class="params">()</span>=&gt;</span>val),</span><br><span class="line">            reason =&gt; <span class="built_in">Promise</span>.resolve(cb()).then(<span class="function"><span class="params">()</span> =&gt;</span> &#123; <span class="keyword">throw</span> reason &#125;)</span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/ldy790028773/tfish-oh.github.io/2020/03/31/index/" data-id="ck8fp5cu80002tk692r7y6wfb" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+  <div class="line_1">
+    <div class="index_post_date">
+      「 March 31st 」
     </div>
   </div>
 
+  <a id="index_post_title" href="/2020/03/31/vuerouter/">vuerouter</a><br/>
 
+  <div class="blank">
   
+  </div>
+
+  <div class="index_post_excerpt">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/03/31/vuerouter/">vuerouter</a>
-          </li>
-        
-          <li>
-            <a href="/2020/03/31/index/">promise简版实现</a>
-          </li>
-        
-      </ul>
+  </div>
+
+  <!--
+  <a class="more" href="/2020/03/31/vuerouter/">阅读更多</a>
+  -->
+
+</div>
+
+<div class=index_list>
+
+  <div class="line_1">
+    <div class="index_post_date">
+      「 March 31st 」
     </div>
   </div>
 
+  <a id="index_post_title" href="/2020/03/31/index/">promise简版实现</a><br/>
+
+  <div class="blank">
   
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 非鱼<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
   </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
+  <div class="index_post_excerpt">
+    
+  </div>
+
+  <!--
+  <a class="more" href="/2020/03/31/index/">阅读更多</a>
+  -->
+
+</div>
+
+
+<div class="page_num">
+
+    
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</div>
 
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
+</div>
 
   </div>
+
+  <foot id="footer">
+  <hr class="boldline"/>
+  <p class="center font">
+    &copy - <a href="https://github.com/tfish-oh/tfish-oh.github.io.git">非鱼</a> -  2019 -  2020 - Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a>  Themed by <a href="https://github.com/pcrab/hexo-theme-quark"> quark </a> 
+  </p>
+  <br/>
+</foot>
+
 </body>
 </html>
